@@ -1,0 +1,145 @@
+const quoteData = [
+    {
+      text: "The elevator to success is out of order. You’ll have to use the stairs, one step at a time.",
+      author:"Joe Girard"
+    },
+    {
+      text: "People often say that motivation doesn’t last. Well, neither does bathing – that’s why we recommend it daily.",
+      author:"Zig Ziglar"
+    },
+    {
+      text: "I always wanted to be somebody, but now I realise I should have been more specific.",
+      author:"Lily Tomlin"
+    },
+    {
+      text: "I am so clever that sometimes I don’t understand a single word of what I am saying",
+      author:"Oscar Wilde"
+    },
+    {
+      text: "People say nothing is impossible, but I do nothing every day.",
+      author:"Winne the Pooh"
+    },
+    {
+      text: "Life is like a sewer… what you get out of it depends on what you put into it.",
+      author:"Tom Lehrer"
+    },
+    {
+      text: "You can’t have everything. Where would you put it?",
+      author:"Steven Wright"
+    },
+    {
+      text: "Work until your bank account looks like a phone number.",
+      author:"Unknown"
+    },
+    {
+      text: "Change is not a four letter word… but often your reaction to it is!",
+      author:"Jeffrey Gitomer"
+    },
+    
+  {
+      text: "People often say that motivation doesn’t last. Well, neither does bathing – that’s why we recommend it daily.",
+      author:"Zig Ziglar"
+    },
+    {
+      text: "I always wanted to be somebody, but now I realise I should have been more specific.",
+      author:"Lily Tomlin"
+    },
+    {
+      text: "I am so clever that sometimes I don’t understand a single word of what I am saying",
+      author:"Oscar Wilde"
+    },
+    {
+      text: "People say nothing is impossible, but I do nothing every day.",
+      author:"Winne the Pooh"
+    },
+    {
+      text: "Life is like a sewer… what you get out of it depends on what you put into it.",
+      author:"Tom Lehrer"
+    },
+    {
+      text: "You can’t have everything. Where would you put it?",
+      author:"Steven Wright"
+    },
+    {
+      text: "Work until your bank account looks like a phone number.",
+      author:"Unknown"
+    },
+    {
+      text: "Change is not a four letter word… but often your reaction to it is!",
+      author:"Jeffrey Gitomer"
+    },
+    {
+      text: "If you think you are too small to make a difference, try sleeping with a mosquito.",
+      author:"Dalai Lama"
+    },
+    
+  {
+      text: "People often say that motivation doesn’t last. Well, neither does bathing – that’s why we recommend it daily.",
+      author:"Zig Ziglar"
+    },
+    {
+      text: "I always wanted to be somebody, but now I realise I should have been more specific.",
+      author:"Lily Tomlin"
+    },
+    {
+      text: "I am so clever that sometimes I don’t understand a single word of what I am saying",
+      author:"Oscar Wilde"
+    },
+    {
+      text: "People say nothing is impossible, but I do nothing every day.",
+      author:"Winne the Pooh"
+    },
+    {
+      text: "Life is like a sewer… what you get out of it depends on what you put into it.",
+      author:"Tom Lehrer"
+    },
+    {
+      text: "You can’t have everything. Where would you put it?",
+      author:"Steven Wright"
+    },
+    {
+      text: "Work until your bank account looks like a phone number.",
+      author:"Unknown"
+    },
+    {
+      text: "Change is not a four letter word… but often your reaction to it is!",
+      author:"Jeffrey Gitomer"
+    },
+    {
+      text: "If you think you are too small to make a difference, try sleeping with a mosquito.",
+      author:"Dalai Lama"
+    },
+    
+  {
+      text: "People often say that motivation doesn’t last. Well, neither does bathing – that’s why we recommend it daily.",
+      author:"Zig Ziglar"
+    },
+    {
+      text: "I always wanted to be somebody, but now I realise I should have been more specific.",
+      author:"Lily Tomlin"
+    },
+    {
+      text: "I am so clever that sometimes I don’t understand a single word of what I am saying",
+      author:"Oscar Wilde"
+    },
+    {
+      text: "People say nothing is impossible, but I do nothing every day.",
+      author:"Winne the Pooh"
+    },
+    {
+      text: "Life is like a sewer… what you get out of it depends on what you put into it.",
+      author:"Tom Lehrer"
+    },
+    {
+      text: "You can’t have everything. Where would you put it?",
+      author:"Steven Wright"
+    },
+    {
+      text: "Work until your bank account looks like a phone number.",
+      author:"Unknown"
+    },
+    {
+      text: "Change is not a four letter word… but often your reaction to it is!",
+      author:"Jeffrey Gitomer"
+    }
+  ];

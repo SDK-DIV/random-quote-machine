@@ -1,0 +1,70 @@
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+h2 {
+  font-size: 19px;
+  margin: 25px, 0;
+  color: whitesmoke;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  color:whitesmoke;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    
+}
+#quote-box {
+    width: 340px;
+    padding: 40px;
+    border-radius: 10px;
+    display:block;
+  background:black;
+  margin:auto;
+}
+
+.click {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .btn,
+#tweet-quote{
+    background:darkblue;
+        display: flex;
+    border-radius: 7px;
+    padding: 7px 11px;
+    cursor: pointer;
+    font-size: 10px;
+    color: whitesmoke;
+  align-items:center;
+  margin:25px 25px 25px;
+  margin-bottom:-10px;
+  margin-left:-7px;
+  justify-content:center;
+  
+}
+
+#tweet-quote {
+    margin-left: 7px;
+    padding: 9px 15px;
+    text-decoration: none;
+  border:white;
+  border-radius: 7px;
+  
+}
+
