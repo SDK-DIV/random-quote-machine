@@ -5,9 +5,40 @@ import "../App.css";
 
 function QuoteContainer({ quotes }) {
   const [randomQuote, setRandomQuote] = useState({});
+  const [randomColor, setRandomColor] = useState("#FFFFFF");
+
+  const myColors = [
+    "#3498db",
+    "#2ecc71",
+    "#9b59b6",
+    "#e74c3c",
+    "#f1c40f",
+    "#800080",
+    "#FF00FF",
+    "#000080",
+    "#0000FF",
+    "#008080",
+    "#00FFFF",
+    "#008000",
+    "#00FF00",
+    "#808000",
+    "#FFFF00",
+    "#800000",
+    "#FF0000",
+    "#808080",
+    "#C0C0C0",
+  ];
+
+  const changeColors = () => {
+    const randomNum = Math.floor(Math.random() * myColors.length);
+    const newRandomColor = myColors[randomNum];
+    setRandomColor(newRandomColor);
+  };
 
   const getNewQuote = () => {
     const newRandomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    changeColors();
 
     if (randomQuote.id !== newRandomQuote.id) {
       setRandomQuote((prevRandomQuote) => {
@@ -22,6 +53,9 @@ function QuoteContainer({ quotes }) {
       getNewQuote();
     }
   };
+
+  // Apply the background color to the body element
+  document.body.style.backgroundColor = randomColor;
 
   return (
     <React.Fragment>
