@@ -5,7 +5,6 @@ import LoadingSpinner from "./components/LoadingSpinner";
 import ErrorMessage from "./components/ErrorMessage";
 import QuoteContainer from "./components/QuoteContainer";
 import "./App.css";
-// import quotesData from "./quotes.json";
 
 function App() {
   const [quotes, setQuotes] = useState([]);
@@ -15,8 +14,8 @@ function App() {
     fetchQuotes();
   }, []);
 
-  function fetchQuotes() {
-    fetch("./quotes.json") // Replace 'local-quotes.json' with the actual path to your local JSON file
+  const fetchQuotes = () => {
+    fetch("./quotes.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch quotes");
@@ -28,25 +27,26 @@ function App() {
         setLoadingStatus(false);
       })
       .catch((error) => {
-        console.error(error);
         setQuotes([]);
         setLoadingStatus(false);
       });
-  }
+  };
 
   return (
     <React.Fragment>
-      <Header />
-      <main>
-        {loadingStatus && quotes.length === 0 ? (
-          <LoadingSpinner />
-        ) : quotes.length !== 0 ? (
-          <QuoteContainer quotes={quotes} />
-        ) : (
-          <ErrorMessage />
-        )}
-      </main>
-      <Footer />
+      <div className="randomBgColor">
+        <Header />
+        <main>
+          {loadingStatus && quotes.length === 0 ? (
+            <LoadingSpinner />
+          ) : quotes.length !== 0 ? (
+            <QuoteContainer quotes={quotes} />
+          ) : (
+            <ErrorMessage />
+          )}
+        </main>
+        <Footer />
+      </div>
     </React.Fragment>
   );
 }
