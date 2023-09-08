@@ -7,32 +7,19 @@ function QuoteContainer({ quotes }) {
   const [randomQuote, setRandomQuote] = useState({});
   const [randomColor, setRandomColor] = useState("#FFFFFF");
 
-  const myColors = [
-    "#3498db",
-    "#2ecc71",
-    "#9b59b6",
-    "#e74c3c",
-    "#f1c40f",
-    "#800080",
-    "#FF00FF",
-    "#000080",
-    "#0000FF",
-    "#008080",
-    "#00FFFF",
-    "#008000",
-    "#00FF00",
-    "#808000",
-    "#FFFF00",
-    "#800000",
-    "#FF0000",
-    "#808080",
-    "#C0C0C0",
-  ];
-
   const changeColors = () => {
-    const randomNum = Math.floor(Math.random() * myColors.length);
-    const newRandomColor = myColors[randomNum];
-    setRandomColor(newRandomColor);
+    fetch("./background_colors.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch colors");
+        }
+        return response.json();
+      })
+      .then((colors) => {
+        const randomNum = Math.floor(Math.random() * colors.length);
+        const newRandomColor = colors[randomNum];
+        setRandomColor(newRandomColor);
+      });
   };
 
   const getNewQuote = () => {
